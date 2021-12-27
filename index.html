@@ -1,128 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gia Bao 🍓| Strawberry</title>
+    <!--- CSS --->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="portfolios.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <!--- font --->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Version bootstrap to have scrollpy -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body
+    class="d-flex justify-content-end"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="50"
+  >
+    <!-- Header box -->
+    <div
+      class="header-box"
+      class="header-box border-right border-2 border-dark p-0"
+    >
+      <div class="header-image m-0 p-0">
+        <img src="./images/avt.JPG" alt="" />
+      </div>
+      <nav class="navbar navbar-dark flex-column justify-content-center">
+        <ul
+          class="
+            nav
+            navbar-nav
+            flex-column
+            justify-content-center
+            text-center text-uppercase
+          "
+        >
+          <li class="nav-item">
+            <a id="home-button" class="nav-link load-menu" href="#home-page"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a id="about-button" class="nav-link load-menu" href="#about-page"
+              >about</a
+            >
+          </li>
+          <li class="nav-item">
+            <a id="resume-button" class="nav-link load-menu" href="#resume-page"
+              >resume</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              id="portfolio-button"
+              class="nav-link load-menu"
+              href="#portfolio-page"
+              >portfolios</a
+            >
+          </li>
+          <li class="nav-item">
+            <a id="blog-button" class="nav-link load-menu" href="#blog-page"
+              >blogs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              id="contact-button"
+              class="nav-link load-menu"
+              href="#contact-page"
+              >contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>giabaone | strawberry 🍓</title>
-
-  <link rel="stylesheet" href="style.min.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/icon">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Handlee&family=Sofia&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <!-- START AVATAR -->
-  <div id="avatar">
-    <div class="avatar">
-      <img src="./images/giabao.jpg" alt="giabaone">
-      <p>giabao</p>
+      <div
+        class="
+          footer
+          d-flex
+          justify-content-center
+          align-items-center
+          border-top border-2 border-dark
+        "
+      >
+        @2021 giabaone
+      </div>
     </div>
-  </div>
-  <!-- END AVATAR -->
 
-  <!-- START SOCIAL -->
-  <div id="social">
-    <div class="social">
-      <a href="https://www.facebook.com/giabaobao2807/" class="facebook" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/giabao.izhere/" class="instagram" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://github.com/giabao2807" class="github" target="_blank">
-        <i class="fab fa-github-alt"></i>
-      </a>
-      <a href="https://twitter.com/giabao2807" class="twitter" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <!-- Hidden bar -->
+    <div id="hidden-bar" class="hidden-bar border border-2 border-dark">
+      <div class="fa fa-bars"></div>
     </div>
-  </div>
-  <!-- END SOCIAL -->
 
-  <!-- START MUSIC -->
-   <audio autoplay preload="metadata" controls>
-    <source src="./musics/music.mp3" type="audio/mpeg" />
-  </audio>
+    <!-- Body content hereeeeeeeeeeeeeeeeeeeeeeeeeeeeee !!!  -->
 
-  <!-- START GALLERY -->
-  <div id="gallery">
-    <div class="gallery">
-      <div class="one big-script">
-        <p>Today is hard, tomorrow will be worse, but the after tomorrow will be sunshine ✨</p>
+     <div class="big-page">
+      <!-- First page: home -->
+    <div id="home-page" class="home" >
+      <div class="snow">❅</div>
+      <div class="snow">❆</div>
+      <div class="snow">❅</div>
+      <div class="snow">❆</div>
+      <div class="snow">❅</div>
+      <div class="snow">❆</div>
+      <div class="snow">❅</div>
+      <div class="snow">❆</div>
+      <div class="snow">❅</div>
+      <div class="snow">❆</div>
+      <div class="snow">❆</div>
+      <div class="snow">❅</div>
+      <div class="snow">❆</div>
+      <div class="snow">❆</div>
+      <div class="snow">❆</div>
+
+      <div class="container">
+        <div class="content wow bounceInUp">
+
+          <h1>Hi, I am <span class="blue"> Gia Bảo</span></h1>
+          <p>
+            I am a backend web developer. I can provide clean code and pixel
+            perfect design. I also make website more & more interactive with web
+            animations.
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/giabaobao2807" target="_blank"><div class="fa fa-facebook"></div></a>
+            </li>
+            <li>
+              <a href=""><div class="fa fa-twitter"></div></a>
+            </li>
+            <li>
+              <a href="https://github.com/giabao2807" target="_blank"><div class="fa fa-github"></div></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="two small-image">
-        <img src='./images/cute-1.jpeg'>
-      </div>
-      <div class="three small-image">
-        <img src='./images/bao1.JPG'>
-      </div>
-      <div class="four horizon-image">
-        <img src='./images/cute-2.jpeg'>
-      </div>
-      <div class='five big-image'>
-        <img src='./images/bao2.JPG'>
-      </div>
-      <div class="six small-script">
-        <p>If you don’t walk today, you’ll have to run tomorrow. And... I'm running 😭</p>
-      </div>
-      <div class='seven vertical-image'>
-        <img src='./images/cute-3.jpeg'>
-      </div>
-      <div class='eight small-image'>
-        <img src='./images/cute-6.jpeg'>
-      </div>
-      <div class='nine small-script'>
-        <p>If you fall asleep now, you will dream. If you study now, you will live your dream.Fightinggg 🥺</p>
-      </div>
-      <div class='ten small-image'>
-        <img src='./images/cute-4.jpeg'>
-      </div>
-      <div class='eleven small-image'>
-        <img src='./images/bao3.jpg'>
-      </div>
-      <div class='twelve vertical-image'>
-        <img src='./images/cute-5.jpeg'>
-      </div>
-      <div class='thirteen small-script'>
-        <p>Gia bảo nè 🥰 I'm not beautiful but unique</p>
-      </div>
-      <div class='fourteen small-image'>
-        <img src='./images/cute-8.jpeg'>
-      </div>
-      <div class='fifteen small-image'>
-        <img src='./images/bao4.JPG'>
-      </div>
-      <div class='sixteen small-script'>
-        <p>…To fall in love with yourself is the first secret to happiness</p>
-      </div>
-      <div class='seventeen small-script'>
-        <p>Do not fear failure but rather fear not trying.</p>
-      </div>
-      <div class='eighteen small-image'>
-        <img src='./images/bao5.JPG'>
-      </div>
-      <div class='nineteen horizon-script'>
-        <p>big dreammer</p>
-      </div>
-      <div class='twenty small-image'>
-        <img src='./images/cute-7.jpeg'>
-      </div>
+      
     </div>
-  </div>
-  <!-- END GALLERY -->
-
-  <!-- START SKILL -->
-  <div class="container">
-    <div class="header">
-      <div class="title">About me</div>
-    </div>
-  </div>
-  <!-- END SKILL -->
-</body>
-
+  </body>
 </html>
