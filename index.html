@@ -141,12 +141,287 @@
     </div>
     <!-- END GALLERY -->
 
-    <!-- START SKILL -->
-    <div class="container">
-      <div class="header">
-        <div class="title">About me</div>
-      </div>
-    </div>
-    <!-- END SKILL -->
+<div class="container skill">
+    
+    <div class="header">
+      
+      <div class="title">About me</div> 
+    </div> 
+    <div class="navi">
+      
+      <div class="navi-item1">
+        
+        <button class="nav-button" id="workbutton">
+          
+          <span></span><span></span><span></span><span></span> 
+          <div class="navi-icon"><i class="fas fa-code"></i></div> 
+          <div class="navi-text">Organization</div> 
+        </button> 
+      </div> 
+      <div class="navi-item2">
+        
+        <button class="nav-button" id="productbutton">
+          
+          <span></span><span></span><span></span><span></span> 
+          <div class="navi-icon"><i class="fab fa-cuttlefish"></i></div> 
+          <div class="navi-text">Project</div> 
+        </button> 
+      </div> 
+      <div class="navi-item3">
+        
+        <button class="nav-button" id="translationbutton">
+          
+          <span></span><span></span><span></span><span></span> 
+          <div class="navi-icon"><i class="fas fa-comment-dots"></i></div> 
+          <div class="navi-text">Career Path</div> 
+        </button> 
+      </div> 
+      <div class="navi-item4">
+        
+        <button class="nav-button" id="gamebutton">
+          
+          <span></span><span></span><span></span><span></span> 
+          <div class="navi-icon"><i class="fas fa-award"></i></i></div> 
+          <div class="navi-text">Award</div> 
+        </button> 
+      </div> 
+    </div> 
+    <div class="indicators">
+      
+      <div id="i1">
+        
+        <div class="navi-indicator" id="ni1"></div> 
+      </div> 
+      <div id="i2">
+        
+        <div class="navi-indicator" id="ni2"></div> 
+      </div> 
+      <div id="i3">
+        
+        <div class="navi-indicator" id="ni3"></div> 
+      </div> 
+      <div id="i4">
+        
+        <div class="navi-indicator" id="ni4"></div> 
+      </div> 
+    </div> 
+    <div class="menu">
+      
+      <div class="menu-separator"></div> 
+      <div class="text-item">
+        
+        <div class="text-item-name"></div> 
+        <div class="text-item-description"></div> 
+        <div class="text-item-year"></div> 
+      </div> 
+      <div class="menu-separator"></div> 
+      <div class="link-item">
+        
+        <a href="#" class="link-item-name" target="_blank"></a> 
+        <div class="link-item-description"></div> 
+      </div> 
+      <div class="menu-separator"></div> 
+      <div class="image-item">
+        
+        <div class="image-item-name"></div> 
+        <div class="image-item-description"></div> 
+        <img src="#" class="image-item-image" /> 
+      </div> 
+    </div> 
+  </div>
+   <!-- START CERTIFICATE -->
+  <div class="container certificate" id="certificate"> 
+    <div class="header"> 
+      <div class="title">Certificate</div> 
+    </div> 
+    <div class="section over-hide px-4 px-sm-0"> 
+      <div class="container"> 
+        <div class="row justify-content-center"> 
+          <div class="col-lg-10 col-xl-8 align-self-center padding-tb"> 
+            <div class="section mx-auto text-center slider-height-padding"> 
+              <input class="checkbox frst" type="radio" id="slide-1" name="slider" checked /> 
+              <label for="slide-1"></label> 
+              <input class="checkbox scnd" type="radio" name="slider" id="slider-2" /> 
+              <label for="slider-2"></label> 
+              <input class="checkbox thrd" type="radio" name="slider" id="slider-3" /> 
+              <label for="slider-3"></label> 
+              <input class="checkbox foth" type="radio" name="slider" id="slider-4" /> 
+              <label for="slider-4"></label> 
+              <ul> 
+                <li> 
+                  <span>SW Programming Competency Certified Y2025</span> 
+                </li> 
+                <li> 
+                  <span>PSM 1 Y2025</span> 
+                </li> 
+                <li> 
+                  <span>Toeic Speaking Y2025</span> 
+                </li> 
+                <li> 
+                  <span>AWS Cloud Service and Infrastructure by FPT Training Centert</span> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+  <!-- END CERTIFICATE -->
+  
+  <script>
+    // START SKILL 
+    const work = JSON.parse(
+      '[' +
+      '{ "type":"text", "name":"LG Electronics R&D Vietnam Ltd - Da Nang, Viet Nam", "description":"Senior Research Engineer | Functional Owner | Software Functional Safety Architect at LG Electronics R&D Vietnam Ltd", "year":"2024 - present" },' +
+      '{ "type":"text", "name":"FPT Software - Da Nang, Viet Nam", "description":"Associate Software Engineer at FPT Software", "year":"2022-2024" },' + 
+      '{ "type":"text", "name":"Intern Backend Developer - Da Nang, Viet Nam", "description":"Intern Backend Web Developer using Python, Vue3 - Paradox VietNam", "year":"2022" },' +
+      '{ "type":"text", "name":"Da Nang University of Science and Technology - Da Nang, Viet Nam", "description":"Student in Information of Technology at Danang University of Science and Technology", "year":"2019 - 2023" }' + // removed trailing comma
+      ']'
+    );
+
+    const product = JSON.parse(
+      '[' +
+      '{ "type":"text", "name":"Nissan CDC - High Variant | Function Safety Software Architecture", "description":"Took full ownership of software functional safety activities for the CDC project, ensuring compliance with ISO 26262 Part 6. Defined software safety requirements, designed safety architecture, and conducted FMEA and DFA analyses.", "year":"5/2024-present" },' +
+      '{ "type":"text", "name":"Dynamic D365 for Sales and Supply Chain Management | Backend Developer", "description":"Use available Microsoft tools and customize existing features according to customer requirements and operations. Support technical leader of project to build base project for Azure Function and how create and deployment Azure Function by .Net6 and Azure Cloud.", "year":"10/2023-4/2024" },' +
+      '{ "type":"text", "name":"Accounting System | Backend developer", "description":"Migrate old system from nodeJS to python, with my team implements new feature for accountings system by Python | Fast API | ReactJS.", "year":"2023" },' +
+      '{ "type":"text", "name":"Human Resources Management | Intern Backend developer", "description":"Developed and maintained internal Human Resource Management application for Paradox using Python | Django RESTAPI | VueJs | SQL.", "year":"2022" }' +
+      ']'
+    );
+
+    const translation = JSON.parse(
+      '[' +
+      '{ "type":"text", "name":"Functional Owner at LG Electronics R&D VietNam ltd", "description":"Provided technical guidance, mentoring, and review for team members working on functional safety tasks in Honda, Jaguar Land Rover, Renault, and Mercedes-Benz projects. Reviewed safety requirements, designs, and analysis documents prepared by engineers, ensuring alignment with ISO 26262 and customer-specific guidelines. Facilitated cross-functional and intercultural collaboration across project teams and departments to align system and software safety objectives.", "year":"7/2025-present" },' +
+      '{ "type":"text", "name":"Team Leader of Batch Job Team at FPT Software", "description":"Acted as a key contributor in base project setup for two major projects, supporting technical leadership and successfully transferring knowledge to the Da Nang site team. Collaborated with the support team to troubleshoot critical issues for clients and deliver timely, effective technical solutions. Support technical leader to build base project for Azure Function.", "year":"12/2023-4/2024" }' +
+      ']'
+    );
+    const game = JSON.parse(
+      "[" +
+      '{ "type":"image", "name":"First Prize of Presentation Contest", "description":"Participant of team and got the 1st prize of presentation contest using english organized by LG Electronic R&D Vietnam Ltd", "src":"./certificate/1st_Prize_Presentation_LG.jpeg" },' +
+      '{ "type":"image", "name":"Best Performance of The year Y2023", "description":"Best performance of the year 2023 at FPT Software", "src":"./certificate/Performance_employee_FPT.jpeg" },' +
+      '{ "type":"image", "name":"3rd FSU Got Talent Y2023", "description":"Participant of FSU Got Talent 2022 and got 3rd prize competition organized by FPT software", "src":"./certificate/fsu_got_talent_3rd.jpeg"} ]'
+    );
+
+    let sl = 0;
+
+    let workbutton = document.getElementById("workbutton");
+    let productbutton = document.getElementById("productbutton");
+    let translationbutton = document.getElementById("translationbutton");
+    let gamebutton = document.getElementById("gamebutton");
+
+    let ni1 = document.getElementById("ni1");
+    let ni2 = document.getElementById("ni2");
+    let ni3 = document.getElementById("ni3");
+    let ni4 = document.getElementById("ni4");
+
+    workbutton.addEventListener("click", (e) => {
+      setIndicator(0);
+      populateItems(work);
+    });
+    productbutton.addEventListener("click", (e) => {
+      setIndicator(1);
+      populateItems(product);
+    });
+    translationbutton.addEventListener("click", (e) => {
+      setIndicator(2);
+      populateItems(translation);
+    });
+    gamebutton.addEventListener("click", (e) => {
+      setIndicator(3);
+      populateItems(game);
+    });
+
+    function populateItems(items) {
+      let menu = document.querySelector(".menu");
+      menu.innerHTML = "";
+      for (i = 0; i < items.length; i++) {
+        if (items[i].type === "text") {
+          let textitem = document.createElement("div");
+          let textitemname = document.createElement("div");
+          let textitemdesc = document.createElement("div");
+          let textitemyear = document.createElement("div");
+
+          textitem.setAttribute("class", "text-item");
+          textitemname.setAttribute("class", "text-item-name");
+          textitemdesc.setAttribute("class", "text-item-description");
+          textitemyear.setAttribute("class", "text-item-year");
+
+          textitemname.innerHTML = items[i].name;
+          textitemdesc.innerHTML = items[i].description;
+          textitemyear.innerHTML = items[i].year;
+
+          textitem.appendChild(textitemname);
+          textitem.appendChild(textitemdesc);
+          textitem.appendChild(textitemyear);
+          menu.appendChild(textitem);
+        }
+        if (items[i].type === "link") {
+          let linkitem = document.createElement("div");
+          let linkitemname = document.createElement("a");
+          let linkitemdesc = document.createElement("div");
+
+          linkitem.setAttribute("class", "link-item");
+          linkitemname.setAttribute("class", "link-item-name");
+          linkitemdesc.setAttribute("class", "link-item-description");
+
+          linkitemname.innerHTML = items[i].name;
+          linkitemname.href = items[i].href;
+          linkitemdesc.innerHTML = items[i].description;
+
+          linkitem.appendChild(linkitemname);
+          linkitem.appendChild(linkitemdesc);
+          menu.appendChild(linkitem);
+        }
+        if (items[i].type === "image") {
+          let imageitem = document.createElement("div");
+          let imageitemname = document.createElement("div");
+          let imageitemdesc = document.createElement("div");
+          let imageitemimage = document.createElement("img");
+
+          imageitem.setAttribute("class", "image-item");
+          imageitemname.setAttribute("class", "image-item-name");
+          imageitemdesc.setAttribute("class", "image-item-description");
+          imageitemimage.setAttribute("class", "image-item-image");
+
+          imageitemname.innerHTML = items[i].name;
+          imageitemdesc.innerHTML = items[i].description;
+          imageitemimage.src = items[i].src;
+
+          imageitem.appendChild(imageitemdesc);
+          imageitem.appendChild(imageitemname);
+          imageitem.appendChild(imageitemimage);
+          menu.appendChild(imageitem);
+        }
+      }
+    }
+
+    function setIndicator(sel) {
+      sl = sel;
+      let vp = "";
+      if (window.innerWidth < 800) {
+        vp = "60px";
+      } else {
+        vp = "85%";
+      }
+      let elems = [ni1, ni2, ni3, ni4];
+      for (i = 0; i < elems.length; i++) {
+        if (i === sel) {
+          elems[i].style.width = vp;
+          elems[i].style.boxShadow = "2px 2px 10px 2px var(--icolor" + (i + 1) + ")";
+        } else {
+          elems[i].style.width = "0";
+          elems[i].style.boxShadow = "none";
+        }
+      }
+    }
+
+    window.addEventListener("resize", (e) => {
+      setIndicator(sl);
+    });
+
+    setIndicator(sl);
+    populateItems(work);
+    // END SKILL
+  </script>  
   </body>
 </html>

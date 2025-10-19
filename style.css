@@ -7,8 +7,11 @@
 }
 
 body {
-	background-image: url("images/bg2.jpg");
-	/* background-color: #ace5f9; */
+	background-image: url("images/bg3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #ace5f9;
 	color: var(--pink-color);
 	font-family: "Sofia", cursive;
 	margin: 0;
@@ -502,4 +505,1193 @@ body {
 	}
 }
 /* END GALLERY */
+
+/* START SKILL */
+
+:root {
+	
+	--radius: 10px;
+	
+	--icolor1: #87a1d5;
+	
+	--icolor2: #e167b4;
+	
+	--icolor3: #002b5c;
+	
+	--icolor4: #c04ead;
+	
+}
+
+
+.container {
+	position: relative;
+	
+	font-family: "Handlee", cursive;
+	
+	grid-template-columns: 5% auto 5%;
+	
+}
+
+.skill {
+	
+	min-width: 400px;
+	
+	left: 0;
+	
+	right: 0;
+	
+	display: grid;
+	
+	grid-template-rows: 150px 100px 40px auto;
+	
+	margin-bottom: 30px;
+	
+}
+
+
+.header {
+	
+	font-family: "Dancing Script", cursive;
+	
+	grid-row: 1 / 2;
+	
+	grid-column: 2 / 3;
+	
+}
+
+
+.title {
+	
+	width: 100%;
+	
+	height: 100%;
+	
+	line-height: 150px;
+	
+	font-size: 70px;
+	
+	text-align: center;
+	
+}
+
+
+.navi {
+	
+	grid-row: 2 / 3;
+	
+	grid-column: 2 / 3;
+	
+	display: grid;
+	
+	grid-template-columns: 25% 25% 25% 25%;
+	
+	grid-template-rows: 100%;
+	
+}
+
+
+.navi-item1,
+
+.navi-item2,
+
+.navi-item3,
+
+.navi-item4 {
+	
+	display: flex;
+	
+	align-items: center;
+	
+	justify-content: center;
+	
+}
+
+
+.navi-item1 {
+	
+	grid-column: 1;
+	
+}
+
+
+.navi-item2 {
+	
+	grid-column: 2;
+	
+}
+
+
+.navi-item3 {
+	
+	grid-column: 3;
+	
+}
+
+
+.navi-item4 {
+	
+	grid-column: 4;
+	
+}
+
+
+.nav-button {
+	
+	height: 70px;
+	
+	width: 60px;
+	
+	border: none;
+	
+	outline: none;
+	
+	border-radius: 20px;
+	
+	background: #fff;
+	
+	box-shadow: 0 0 20px 0 var(--pink-shadow);
+	
+	font-weight: 700;
+	
+	cursor: pointer;
+	
+	position: relative;
+	
+	overflow: hidden;
+	
+	z-index: 1;
+	
+	transition: 0.5s;
+	
+}
+
+
+.nav-button span {
+	
+	position: absolute;
+	
+	width: 25%;
+	
+	height: 100%;
+	
+	background-color: #61a5e9;
+	
+	transform: translateY(150%);
+	
+	border-radius: 50%;
+	
+	left: calc((var(--n) - 1) * 25%);
+	
+	transition: 0.5s;
+	
+	transition-delay: calc((var(--n) - 1) * 0.1s);
+	
+	z-index: -1;
+	
+}
+
+
+.nav-button:hover span {
+	
+	transform: translateY(0) scale(2);
+	
+}
+
+
+.nav-button span:nth-child(1) {
+	
+	--n: 1;
+	
+}
+
+
+.nav-button span:nth-child(2) {
+	
+	--n: 2;
+	
+}
+
+
+.nav-button span:nth-child(3) {
+	
+	--n: 3;
+	
+}
+
+
+.nav-button span:nth-child(4) {
+	
+	--n: 4;
+	
+}
+
+
+#workbutton .navi-icon {
+	
+	color: var(--icolor1);
+	
+}
+
+
+#productbutton .navi-icon {
+	
+	color: var(--icolor2);
+	
+}
+
+
+#translationbutton .navi-icon {
+	
+	color: var(--icolor3);
+	
+}
+
+
+#gamebutton .navi-icon {
+	
+	color: var(--icolor4);
+	
+}
+
+
+.navi-icon {
+	
+	height: 40px;
+	
+	line-height: 50px;
+	
+	font-size: 20px;
+	
+	text-align: center;
+	
+}
+
+
+.navi-text {
+	
+	height: 30px;
+	
+	line-height: 20px;
+	
+	text-align: center;
+	
+	font-size: 0.9em;
+	
+	font-weight: 300;
+	
+}
+
+
+.indicators {
+	
+	grid-column: 2 / 3;
+	
+	grid-row: 3 / 4;
+	
+	display: grid;
+	
+	grid-template-columns: 25% 25% 25% 25%;
+	
+}
+
+
+#i1,
+
+#i2,
+
+#i3,
+
+#i4 {
+	
+	display: flex;
+	
+	align-items: center;
+	
+	justify-content: center;
+	
+}
+
+
+#i1 {
+	
+	grid-column: 1;
+	
+}
+
+
+#i2 {
+	
+	grid-column: 2;
+	
+}
+
+
+#i3 {
+	
+	grid-column: 3;
+	
+}
+
+
+#i4 {
+	
+	grid-column: 4;
+	
+}
+
+
+.navi-indicator
+
+
+	{
+	height: 4px;
+	
+	width: 60px;
+	
+	border-radius: 20px;
+	
+	transition: width 0.2s;
+	
+}
+
+
+#ni1 {
+	
+	background: var(--icolor1);
+	
+}
+
+
+#ni2 {
+	
+	background: var(--icolor2);
+	
+}
+
+
+#ni3 {
+	
+	background: var(--icolor3);
+	
+}
+
+
+#ni4 {
+	
+	background: var(--icolor4);
+	
+}
+
+
+.menu {
+	
+	grid-column: 2 / 3;
+	
+	grid-row: 4 / 5;
+	
+}
+
+
+.text-item,
+
+.link-item,
+
+.image-item {
+	
+	grid-column: 2;
+	
+	margin: 15px;
+	
+	display: grid;
+	
+	font-size: 1.2em;
+	
+	border-radius: var(--radius);
+	
+	padding: 0 25px;
+	
+	background: #fffafa;
+	
+	box-shadow: 0 0 20px 0 #9ebbcf;
+	
+}
+
+
+.text-item {
+	
+	grid-template-columns: auto 200px;
+	
+	grid-template-rows: 50px auto;
+	
+}
+
+
+.link-item {
+	
+	grid-template-columns: auto;
+	
+	grid-template-rows: 50px auto;
+	
+}
+
+
+.image-item {
+	
+	grid-template-rows: 50px 50px 275px;
+	
+}
+
+
+.text-item-name,
+
+.link-item-name,
+
+.image-item-name {
+	
+	grid-column-start: 1;
+	
+	grid-column-end: 2;
+	
+	grid-row-start: 1;
+	
+	grid-row-end: 2;
+	
+	font-weight: 900;
+	
+	line-height: 70px;
+	
+	text-align: start;
+	
+}
+
+
+.link-item-name {
+	
+	cursor: pointer;
+	
+	color: inherit;
+	
+}
+
+
+.link-item-name:active {
+	
+	color: inherit;
+	
+}
+
+
+.text-item-description,
+
+.link-item-description,
+
+.image-item-description {
+	
+	grid-column-start: 1;
+	
+	grid-column-end: 2;
+	
+	grid-row-start: 2;
+	
+	grid-row-end: 2;
+	
+	text-align: start;
+	
+	margin: 10px 0;
+	
+}
+
+
+.text-item-year {
+	
+	grid-column-start: 2;
+	
+	grid-column-end: 2;
+	
+	grid-row-start: 1;
+	
+	grid-row-end: 3;
+	
+	font-weight: 700;
+	
+	line-height: 100px;
+	
+	text-align: end;
+	
+}
+
+
+.image-item-image {
+	
+	grid-column-start: 1;
+	
+	grid-column-end: 2;
+	
+	grid-row-start: 3;
+	
+	grid-row-end: 3;
+	
+	font-weight: 700;
+	
+	text-align: center;
+	
+}
+
+
+.image-item img {
+	
+	height: 250px;
+	
+	width: auto;
+	
+	object-fit: contain;
+	
+}
+
+
+.menu-separator {
+	
+	grid-column-start: 2;
+	
+	grid-column-end: 2;
+	
+	height: 50px;
+	
+	margin: 15px;
+	
+	margin-top: 35px;
+	
+	font-size: 1.2em;
+	
+	line-height: 50px;
+	
+	font-weight: 700;
+	
+	border-radius: var(--radius);
+	
+	padding-left: 30px;
+	
+	background: #f3f3f3;
+	
+	box-shadow: 0 0 20px 0 #9ebbcf;
+	
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	
+	.nav-button {
+		
+		height: 70px;
+		
+		width: 100%;
+		
+		margin: 15px;
+		
+		display: flex;
+		
+		justify-content: center;
+		
+		border-radius: var(--radius);
+		
+	}
+
+	
+	.navi-icon {
+		
+		height: 100%;
+		
+		line-height: 70px;
+		
+		font-size: 25px;
+		
+		text-align: center;
+		
+	}
+
+	
+	.navi-text {
+		
+		line-height: 70px;
+		
+		margin-left: 10px;
+		
+		text-align: left;
+		
+		font-size: 1.3em;
+		
+		font-weight: 700;
+		
+	}
+
+	
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+	
+	.text-item,
+	
+	.link-item,
+	
+	.image-item {
+		
+		font-size: 0.9em;
+		
+	}
+
+	
+}
+
+
+@media only screen and (max-width: 430px) {
+
+	
+	.text-item {
+		
+		grid-template-columns: auto 100px;
+		
+	}
+
+	
+}
+
+
+button,
+
+p {
+	
+	display: inline-block;
+	
+	border: none;
+	
+	margin: 0;
+	
+	text-decoration: none;
+	
+	padding: 0;
+	
+	background: none;
+	
+	border-radius: 0;
+	
+	overflow: hidden;
+	
+	user-select: none;
+	
+}
+
+
+input {
+	
+	padding: 0;
+	
+}
+
+
+input:focus {
+	
+	outline: none;
+	
+}
+
+
+button:focus {
+	
+	outline: none;
+	
+}
+
+
+textarea:focus {
+	
+	outline: none;
+	
+}
+
+
+/* END SKILL */
+
+/* START CERTIFICATE */
+
+#certificate a {
+	
+	cursor: pointer;
+	
+}
+
+
+#certificate a:hover {
+	
+	text-decoration: none;
+	
+}
+
+
+#certificate .section {
+	
+	position: relative;
+	
+	width: 100%;
+	
+	display: block;
+	
+}
+
+
+#certificate .over-hide {
+	
+	overflow: hidden;
+	
+}
+
+
+#certificate .padding-tb {
+	
+	padding: 20px 0 100px;
+	
+}
+
+
+#certificate [type="radio"]:checked,
+
+#certificate [type="radio"]:not(:checked) {
+	
+	position: absolute;
+	
+	left: -9999px;
+	
+}
+
+
+#certificate .checkbox:checked+label,
+
+#certificate .checkbox:not(:checked)+label {
+	
+	position: relative;
+	
+	cursor: pointer;
+	
+	margin: 150px auto;
+	
+	text-align: center;
+	
+	margin-right: 6px;
+	
+	margin-left: 6px;
+	
+	display: inline-block;
+	
+	width: 50px;
+	
+	height: 50px;
+	
+	border: 3px solid var(--pink-border);
+	
+	background-size: cover;
+	
+	background-position: center;
+	
+	box-sizing: border-box;
+	
+	-webkit-transition: all 0.2s ease;
+	
+	transition: all 0.2s ease;
+	
+	background-image: url('./certificate/SWPCT_Certificated_LG.JPG');
+	
+	animation: border-transform 6s linear infinite alternate forwards;
+	
+	-webkit-animation-play-state: paused;
+	
+	-moz-animation-play-state: paused;
+	
+	animation-play-state: paused;
+	
+}
+
+
+#certificate .checkbox.scnd+label {
+	
+	background-image: url('./certificate/PSM1_LG.jpeg');
+	
+}
+
+
+#certificate .checkbox.thrd+label {
+	
+	background-image: url('./certificate/toeic_cer.jpeg');
+	
+}
+
+
+#certificate .checkbox.foth+label {
+	
+	background-image: url('./certificate/AWS_Foundation_FPT.jpeg');
+	
+}
+
+
+
+
+#certificate .checkbox:checked+label {
+	
+	box-shadow: 0 8px 25px 0 rgba(16, 39, 112, .3);
+	
+	transform: scale(1.3);
+	
+	-webkit-animation-play-state: running;
+	
+	-moz-animation-play-state: running;
+	
+	animation-play-state: running;
+	
+}
+
+
+@keyframes border-transform {
+
+	
+	0%,
+	100% {
+		border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+	}
+
+	
+	14% {
+		border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+	}
+
+	
+	28% {
+		border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+	}
+
+	
+	42% {
+		border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+	}
+
+	
+	56% {
+		border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+	}
+
+	
+	70% {
+		border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+	}
+
+	
+	84% {
+		border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+	}
+
+	
+}
+
+
+#certificate .slider-height-padding {
+	
+	padding-top: 540px;
+	
+}
+
+
+#certificate ul {
+	
+	position: absolute;
+	
+	top: 0;
+	
+	left: 0;
+	
+	display: flex;
+	
+	justify-content: center;
+	
+	width: 100%;
+	
+	z-index: 100;
+	
+	padding: 0;
+	
+	margin: 0;
+	
+	list-style: none;
+	
+}
+
+
+#certificate ul li {
+	
+	position: absolute;
+	
+	width: 54%;
+	
+	height: 650px;
+	
+	display: block;
+	
+	z-index: 100;
+	
+	padding: 0;
+	
+	margin: 0;
+	
+	list-style: none;
+	
+	border: 5px solid var(--pink-border);
+	
+	background-size: cover;
+	
+	background-position: center;
+	
+	background-image: url('./certificate/SWPCT_Certificated_LG.JPG');
+	
+	border-radius: 50%;
+	
+	box-sizing: border-box;
+	
+	font-family: 'Poppins', sans-serif;
+	
+	font-weight: 900;
+	
+	font-size: 16px;
+	
+	letter-spacing: 2px;
+	
+	line-height: 2.7;
+	
+	color: #343434;
+	
+	writing-mode: vertical-rl;
+	
+	opacity: 0;
+	
+	pointer-events: none;
+	
+	box-shadow: 0 8px 25px 0 rgba(16, 39, 112, .1);
+	
+	-webkit-transition: all 0.5s ease;
+	
+	transition: all 0.5s ease;
+	
+}
+
+
+#certificate ul li span {
+	
+	mix-blend-mode: difference;
+	
+}
+
+
+#certificate ul li:nth-child(2) {
+	
+	background-image: url('./certificate/PSM1_LG.jpeg');
+	
+}
+
+
+#certificate ul li:nth-child(3) {
+	
+	background-image: url('./certificate/toeic_cer.jpeg');
+	
+}
+
+
+#certificate ul li:nth-child(4) {
+	
+	background-image: url('./certificate/AWS_Foundation_FPT.jpeg');
+	
+}
+
+
+#certificate .checkbox.frst:checked~ul li:nth-child(1) {
+	
+	opacity: 1;
+	
+	pointer-events: auto;
+	
+	border-radius: 16px;
+	
+}
+
+
+#certificate .checkbox.scnd:checked~ul li:nth-child(2) {
+	
+	opacity: 1;
+	
+	pointer-events: auto;
+	
+	border-radius: 16px;
+	
+}
+
+
+#certificate .checkbox.thrd:checked~ul li:nth-child(3) {
+	
+	opacity: 1;
+	
+	pointer-events: auto;
+	
+	border-radius: 16px;
+	
+}
+
+
+#certificate .checkbox.foth:checked~ul li:nth-child(4) {
+	
+	opacity: 1;
+	
+	pointer-events: auto;
+	
+	border-radius: 16px;
+	
+}
+
+
+#certificate .logo {
+	
+	position: absolute;
+	
+	top: 30px;
+	
+	right: 30px;
+	
+	display: block;
+	
+	z-index: 100;
+	
+	transition: all 250ms linear;
+	
+}
+
+
+#certificate .logo img {
+	
+	height: 26px;
+	
+	width: auto;
+	
+	display: block;
+	
+}
+
+
+@media (max-width: 1024px) {
+
+	
+	#certificate .slider-height-padding {
+		
+		padding-top: 460px;
+		
+	}
+
+	
+	#certificate ul li {
+		
+		width: 60%;
+		
+		height: 430px;
+		
+	}
+
+	
+}
+
+
+@media (max-width: 768px) {
+
+	
+	#certificate .slider-height-padding {
+		
+		padding-top: 400px;
+		
+	}
+
+	
+	#certificate ul li {
+		
+		width: 70%;
+		
+		height: 360px;
+		
+	}
+
+	
+}
+
+
+@media (max-width: 426px) {
+
+	
+	#certificate .slider-height-padding {
+		
+		padding-top: 230px;
+		
+	}
+
+	
+	#certificate ul li {
+		
+		width: 70%;
+		
+		height: 200px;
+		
+	}
+
+	
+}
+
+
+@media (max-width: 376px) {
+
+	
+	#certificate .slider-height-padding {
+		
+		padding-top: 170px;
+		
+	}
+
+	
+	#certificate ul li {
+		
+		width: 60%;
+		
+		height: 150px;
+		
+	}
+
+	
+}
+
+
+@media (max-width: 320px) {
+
+	
+	#certificate .slider-height-padding {
+		
+		padding-top: 180px;
+		
+	}
+
+	
+	#certificate ul li {
+		
+		width: 70%;
+		
+		height: 150px;
+		
+	}
+
+	
+}
+
+
+/* END CERTIFICATE */
+
 
